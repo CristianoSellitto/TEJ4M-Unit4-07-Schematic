@@ -1,0 +1,190 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT1
+U 1 1 65394D7A
+P 600 750
+F 0 "BT1" H 708 796 50  0000 L CNN
+F 1 "Battery" H 708 705 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Bulgin_BX0036_1xC" V 600 810 50  0001 C CNN
+F 3 "~" V 600 810 50  0001 C CNN
+	1    600  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6539A2D5
+P 1150 1100
+F 0 "SW1" H 1150 1385 50  0000 C CNN
+F 1 "SW_Push" H 1150 1294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 1150 1300 50  0001 C CNN
+F 3 "~" H 1150 1300 50  0001 C CNN
+	1    1150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6539B500
+P 1150 1500
+F 0 "SW2" H 1150 1785 50  0000 C CNN
+F 1 "SW_Push" H 1150 1694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 1150 1700 50  0001 C CNN
+F 3 "~" H 1150 1700 50  0001 C CNN
+	1    1150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6539671F
+P 800 1100
+F 0 "R1" V 600 1050 50  0000 L CNN
+F 1 "220Ω" V 700 1000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 730 1100 50  0001 C CNN
+F 3 "~" H 800 1100 50  0001 C CNN
+	1    800  1100
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74xx:74LS02 U1
+U 1 1 653A0A93
+P 1800 1050
+F 0 "U1" H 1800 1375 50  0000 C CNN
+F 1 "74LS02" H 1800 1284 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1800 1050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 1800 1050 50  0001 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U1
+U 2 1 653A1BA5
+P 1800 1600
+F 0 "U1" H 1800 1925 50  0000 C CNN
+F 1 "74LS02" H 1800 1834 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1800 1600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 1800 1600 50  0001 C CNN
+	2    1800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 653B5927
+P 800 1500
+F 0 "R2" V 600 1450 50  0000 L CNN
+F 1 "220Ω" V 700 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 730 1500 50  0001 C CNN
+F 3 "~" H 800 1500 50  0001 C CNN
+	1    800  1500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	600  950  600  1100
+Wire Wire Line
+	600  1100 650  1100
+Wire Wire Line
+	600  1100 600  1500
+Wire Wire Line
+	600  1500 650  1500
+Connection ~ 600  1100
+Wire Wire Line
+	1350 1100 1500 1100
+Wire Wire Line
+	1500 1100 1500 1150
+Wire Wire Line
+	1350 1100 1350 550 
+Wire Wire Line
+	1350 550  600  550 
+Connection ~ 1350 1100
+Wire Wire Line
+	1350 1500 1350 1100
+Wire Wire Line
+	1350 1500 1350 1700
+Wire Wire Line
+	1350 1700 1500 1700
+Connection ~ 1350 1500
+Wire Wire Line
+	2100 1600 2100 1400
+Wire Wire Line
+	2100 1400 1450 1400
+Wire Wire Line
+	1450 1400 1450 950 
+Wire Wire Line
+	1450 950  1500 950 
+Wire Wire Line
+	2100 1050 2100 1200
+Wire Wire Line
+	2100 1200 1400 1200
+Wire Wire Line
+	1400 1200 1400 1500
+Wire Wire Line
+	1400 1500 1500 1500
+Connection ~ 2100 1050
+$Comp
+L Device:LED D1
+U 1 1 6539DEF1
+P 2250 1050
+F 0 "D1" H 2243 795 50  0000 C CNN
+F 1 "LED" H 2243 886 50  0000 C CNN
+F 2 "LED_SMD:LED_0201_0603Metric" H 2250 1050 50  0001 C CNN
+F 3 "~" H 2250 1050 50  0001 C CNN
+	1    2250 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 653995ED
+P 2250 1600
+F 0 "D2" H 2243 1345 50  0000 C CNN
+F 1 "LED" H 2243 1436 50  0000 C CNN
+F 2 "LED_SMD:LED_0201_0603Metric" H 2250 1600 50  0001 C CNN
+F 3 "~" H 2250 1600 50  0001 C CNN
+	1    2250 1600
+	-1   0    0    1   
+$EndComp
+Connection ~ 2100 1600
+$Comp
+L Device:R R3
+U 1 1 653CC758
+P 2550 1050
+F 0 "R3" V 2350 1000 50  0000 L CNN
+F 1 "220Ω" V 2450 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2480 1050 50  0001 C CNN
+F 3 "~" H 2550 1050 50  0001 C CNN
+	1    2550 1050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 653CC75E
+P 2550 1600
+F 0 "R4" V 2350 1550 50  0000 L CNN
+F 1 "220Ω" V 2450 1500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2480 1600 50  0001 C CNN
+F 3 "~" H 2550 1600 50  0001 C CNN
+	1    2550 1600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2700 1050 2700 1600
+Wire Wire Line
+	2700 1600 2700 1800
+Wire Wire Line
+	2700 1800 600  1800
+Wire Wire Line
+	600  1800 600  1500
+Connection ~ 2700 1600
+Connection ~ 600  1500
+$EndSCHEMATC
